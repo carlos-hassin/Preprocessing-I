@@ -180,11 +180,11 @@ body {
   background-color: #64C2C7;
   border-radius: 7px;
 }
-.navigation nav a {
+.navigation a {
   text-decoration: orange dotted underline;
   color: black;
 }
-.navigation nav a .column {
+.navigation a .column {
   display: flex;
   flex-direction: column;
 }
@@ -203,14 +203,14 @@ body {
   background-color: #64C2C7;
   border-radius: 7px;
 }
-.heading h1 {
+.heading-text .heading h1 {
   font-size: 50px;
 }
-.heading h2 {
+.heading-text .heading h2 {
   font-size: 20px;
   text-decoration: orange dotted underline;
 }
-.heading h2 .column {
+.heading-text .heading h2 .column {
   display: flex;
   flex-direction: column;
 }
@@ -274,15 +274,6 @@ body {
     border: 2px dotted orange;
     padding: 20px;
   }
-  .heading-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
-    border: 2px dotted orange;
-    padding: 20px;
-  }
   h2 {
     text-decoration: orange dotted underline;
   }
@@ -291,12 +282,17 @@ body {
     flex-direction: column;
   }
   .heading {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0%;
+    width: 100%;
   }
   .main-content {
+    margin: 10px 0%;
     display: flex;
-    flex-direction: column
-    width:100%;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 850px;
+    flex-wrap: wrap;
   }
 }

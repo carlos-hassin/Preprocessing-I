@@ -81,19 +81,22 @@ body {
   justify-content: flex-end;
   font-size: 20px;
   margin: 80px 160px;
+
+   nav {
+    width:80%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @lighter-tone;
+    border-radius: 7px;
+  }//this closes the nav
+
+   a {
+    .underlined;
+    color: black;
+  }//this closes a attributes
 }
-.navigation nav {
-  width:80%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  background-color: @lighter-tone;
-  border-radius: 7px;
-}
-.navigation nav a {
-  .underlined;
-  color: black;
-}
+
 .heading {
   display: flex;
   justify-content: flex-end;
@@ -108,13 +111,15 @@ body {
   margin: 0;
   background-color: @lighter-tone;
   border-radius: 7px;
-}
-.heading h1 {
-  font-size: 50px;
-}
-.heading h2 {
-  font-size: 20px;
-  .underlined;
+
+  .heading h1 {
+    font-size: 50px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    .underlined;
+  }
 }
 .main-content {
   display: flex;
@@ -131,14 +136,15 @@ body {
   width: 20%;
   padding: 10px;
   align-items: center;
-}
-.left-column h2 {
-  display: flex;
-  align-items: center;
-  .underlined;
-  background-color: @lighter-tone;
-  height: 35px;
-  border-radius: 7px;
+
+ h2 {
+    display: flex;
+    align-items: center;
+    .underlined;
+    background-color: @lighter-tone;
+    height: 35px;
+    border-radius: 7px;
+  }
 }
 .right-column {
   font-size: 18px;
@@ -156,24 +162,15 @@ body {
 @media (max-width: 500px) {
   .navigation {
     margin: 0px;
-  }
-  .navigation nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+    }//closes nav
   }
   .navigation nav a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
-    border: 2px dotted orange;
-    padding: 20px;
-  }
-  
-  .heading-text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,23 +184,21 @@ body {
     .underlined;
   }
 
-  .heading{
-    display: none;
-  }
+.heading{
+  display:flex;
+  justify-content: center;
+  margin: 10px 0%;
+  width:100%;
+}
 
   .main-content{
+    margin:10px 0%;
     display: flex;
-    flex-direction: column
+    flex-direction: row;
     width:100%;
+    height:850px;
+    flex-wrap: wrap;
+
   }
 
-  .left-column{
-    display: flex;
-    flex-direction: column;
 }
-
-.right-column{
-  display: flex;
-  flex-direction: column;
-}
-
