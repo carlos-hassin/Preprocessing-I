@@ -1,1 +1,298 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v11/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v11/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+.underlined {
+  text-decoration: orange dotted underline;
+}
+.underlined .column {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background-color: #BBDADA;
+  font-family: 'Pacifico', cursive;
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin: 80px 160px;
+}
+.navigation nav {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #64C2C7;
+  border-radius: 7px;
+}
+.navigation a {
+  text-decoration: orange dotted underline;
+  color: black;
+}
+.navigation a .column {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  justify-content: flex-end;
+  margin: 80px 160px;
+  background-color: #59A3BE;
+  border-radius: 7px;
+  padding: 10px;
+}
+.heading-text {
+  width: 80%;
+  padding: 10px;
+  margin: 0;
+  background-color: #64C2C7;
+  border-radius: 7px;
+}
+.heading-text .heading h1 {
+  font-size: 50px;
+}
+.heading-text .heading h2 {
+  font-size: 20px;
+  text-decoration: orange dotted underline;
+}
+.heading-text .heading h2 .column {
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 160px;
+  height: 600px;
+  background-color: #59A3BE;
+  border-radius: 7px;
+}
+.left-column {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  width: 20%;
+  padding: 10px;
+  align-items: center;
+}
+.left-column h2 {
+  display: flex;
+  align-items: center;
+  text-decoration: orange dotted underline;
+  background-color: #64C2C7;
+  height: 35px;
+  border-radius: 7px;
+}
+.left-column h2 .column {
+  display: flex;
+  flex-direction: column;
+}
+.right-column {
+  font-size: 18px;
+  margin-top: 13px;
+  padding-top: 15px;
+  border-top: 4px dotted orange;
+  width: 80%;
+  background-color: #64C2C7;
+  border-radius: 7px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .navigation {
+    margin: 0px;
+  }
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navigation nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    border: 2px dotted orange;
+    padding: 20px;
+  }
+  h2 {
+    text-decoration: orange dotted underline;
+  }
+  h2 .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0%;
+    width: 100%;
+  }
+  .main-content {
+    margin: 10px 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 850px;
+    flex-wrap: wrap;
+  }
+}
